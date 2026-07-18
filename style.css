@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Manufacturing Consent';
+  src: url(./font/manufacturing-consent-latin-400-normal.woff) format('woff'),
+       url(./font/manufacturing-consent-latin-400-normal.woff2) format('woff2'),
+       url(./font/ManufacturingConsent-Regular.ttf) format('truetype');
+}
+
+body {
+  background-color: SeaGreen;
+  color: CornSilk;
+  font-family: 'Manufacturing Consent', serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h3 {
+  line-height: 10;
+}
+
+.thumbnail {
+  display: inline-block;
+  color: cornsilk;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.headelement:hover{
+  transform: scale(1.2);
+  opacity: .75;
+}
+
+.inline {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.footer {
+  position: fixed;
+  top: 90%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border-style: dashed;
+  width: 80%;
+  margin-top: 2em;
+}
+
+.element {
+  background-color: CornSilk;
+  color: seagreen;
+  padding: 10px 0;
+  margin: 5px;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: right;
+  width: 30%;
+  height: 10%;
+  right: 0;
+}
+
+.headelement {
+  display: flex;
+  width: 20%;
+  /* height: 100%; */
+  justify-content: center;
+  align-items: stretch;
+  border-style: dotted;
+}
+

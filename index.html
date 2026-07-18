@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- CACHEBUSTING. https://petrapixel.neocities.org/coding/cachebusting -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Path to your CSS file (like usual), or empty ("") if you don't have one:
+        const CSS_FILE_PATH = "style.css"; 
+        
+        // Path to your JS file (like usual), or empty ("") if you don't have one:
+        const JS_FILE_PATH = ""; 
+        
+        function loadScript(src) {
+          const script = document.createElement("script");
+          script.src = src + "?nocache=" + new Date().getTime();
+          script.async = true;
+          document.head.appendChild(script);
+        }
+        function loadCSS(href) {
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = href + "?nocache=" + new Date().getTime();
+          document.head.appendChild(link);
+        }
+        if (JS_FILE_PATH) loadScript(JS_FILE_PATH);
+        if (CSS_FILE_PATH) loadCSS(CSS_FILE_PATH);
+    });
+    </script>
+
+    <title>Heabr</title>
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="headelement"><a href="./Snake/snake.html"><img class='thumbnail' src="./pics/snake.png" title = 'Snake Game' alt="Snake Game"/></a></div>
+      <div class="headelement" style="align-items: center;"> <a href="./Gallery/Gallery.html">Gallery</a> </div>
+      <div class="headelement" style="align-items: center;">hi</div>
+      <div class="headelement" style="align-items: center;">hi</div>
+      <div class="headelement" style="align-items: center;">hi</div>
+    </div>
+    <h1>Heather's Website Woah...</h1>
+    <h2>Welcome to the website that I made myself.</h2>
+    <div class="list">
+      <h2>To Do:</h2>
+      <div class="element">Learn HTML<img class="inline" src="./pics/check.png"/></div>
+      <div class="element">Learn CSS<img class="inline" src="./pics/check.png"/></div>
+      <div class="element">Learn JS</div>
+      <div class="element">Check out other websites<img class="inline" src="./pics/check.png"/></div>
+      <div class="element">Decide what to put on website</div>  
+    </div>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <h3>w</h3>
+    <a class="footer" href="https://neocities.org"><img src="./pics/neocities.png"></a>
+  </body>
+</html>
