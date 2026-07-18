@@ -215,28 +215,28 @@ const init = () => {
 const keyDown = (event) => {
   const key = event.key
   
-  if(snake.dx && key === 'ArrowUp') {
+  if(snake.dx && (key === 'ArrowUp' || key === 'w')) {
     up = true;
     down = false;
     left = false;
     right = false;
     return;
   } 
-  if(snake.dx && key === 'ArrowDown') {
+  if (snake.dx && (key === "ArrowDown" || key === "s")) {
     down = true;
     up = false;
     left = false;
     right = false;
     return;
   }
-  if(snake.dy && key === 'ArrowLeft') {
+  if (snake.dy && (key === "ArrowLeft" || key === "a")) {
     left = true;
     right = false;
     up = false;
     down = false;
     return;
   }
-  if(snake.dy && key === 'ArrowRight') {
+  if(snake.dy && (key === 'ArrowRight' || key === 'd')) {
     right = true;
     left = false;
     up = false;

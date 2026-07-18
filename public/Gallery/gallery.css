@@ -13,7 +13,7 @@
 
 .image-box div {
   width: calc(25% - 10px);
-  height: 50vh;
+  aspect-ratio: 1/1;
   margin: 5px;
   border: 5px solid;
   position: relative;
@@ -58,7 +58,7 @@
 
 dialog {
   margin: auto;
-  border: none;
+  border: 10px solid cornsilk;
   height: 90vh;
   overflow: hidden;
   outline: none;
